@@ -3,7 +3,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 class ItsPosition:
-    """Class for ITS positional information derived from hmmserach domtable files.
+    """Class for ITS positional information derived from hmmsearch domtable files.
     Args:
         domtable (str):  the path locating the domtable file from HMMER 3 hmmsearch.
         region (str): The region of the ITS to extract choices: ["ITS1", "ITS2", "ALL"].
