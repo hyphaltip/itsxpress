@@ -93,7 +93,7 @@ class SeqSample:
             p4 = subprocess.run(parameters, stderr=subprocess.PIPE, stdout=subprocess.DEVNULL)
             p4.check_returncode()
         except subprocess.CalledProcessError as e :
-            logging.exception("Could not perform ITS identification with hmmserach. The error was:\n {}".format(p4.stderr.decode('utf-8')))
+            logging.exception("Could not perform ITS identification with hmmsearch. The error was:\n {}".format(p4.stderr.decode('utf-8')))
             raise e
         except FileNotFoundError as f:
             logging.error("hmmsearch was not found, make sure HMMER3 is installed and executable")
